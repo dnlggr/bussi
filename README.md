@@ -4,10 +4,11 @@
 
 ## What it can do
 - Querying bus stations 📌
-- Station monitors with departure times 🖥
+- Querying station monitors with departure times 🖥
 
 ## Todo
 - Querying journeys from A to B 🚀
+- Querying lcations by coordinates 🗺
 - Documentation
 - ...
 
