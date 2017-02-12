@@ -1,7 +1,7 @@
 {
   "name": "bussi",
   "version": "1.0.0",
-  "description": "A node wrapper for parts of an arbitrary public transport service.",
+  "description": "A node for parts of the API of a public transport service",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"

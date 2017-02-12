@@ -1,6 +1,6 @@
 # Bussi 🚌
 
-*Bussi* is a [node](https://nodejs.org) wrapper for a specific public transport API in Austria.
+*Bussi* is a [node](https://nodejs.org) wrapper for parts of the API of a public transport service.
 
 ## What it can do
 - Querying bus stations 📌
@@ -17,7 +17,7 @@ Detailed documentation is still todo. For now, see the examples below.
 
 ### API Credentials
 
-Before using bussi, you must set the API credentials of the API that you want to use. You can do so by calling `use(credentials)`. the `credentials` object you set must include the following properties that must be of the stated types:
+Before using Bussi, you must set the API credentials of the API that you want to use. You can do so by calling `use(credentials)`. the `credentials` object you set must include the following properties that must be of the stated types:
 
 - `API_URL` (String)
 - `CLIENT` (Object)
