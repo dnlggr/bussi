@@ -13,8 +13,15 @@
 - Querying stations by coordinates 🗺
 - Being documented very well
 
+## Installation
 
-## Documentation
+You can clone this repository and use *Bussi* locally but for most use cases it's probably best to install it via *npm*:
+
+``` shell
+npm install @dnlggr/bussi 
+```
+
+## Usage
 
 As mentioned, detailed documentation is still todo. For now, see the examples below.
 
@@ -29,10 +36,10 @@ Before using *Bussi*, you must set the API credentials of the API that you want 
 
 You also have to create a `credentials.js` file in the `test` directory that exports an object with the above properties in order to run the tests.
 
-#### Example
+#### Examples
 
 ``` javascript
-const bussi = require('bussi')
+const bussi = require('@dnlggr/bussi')
 
 bussi.use({
     API_URL: 'api.example.com',
@@ -64,7 +71,7 @@ A location object might look like this:
 Querying locations:
 
 ``` javascript
-const bussi = require('bussi')
+const bussi = require('@dnlggr/bussi')
 
 bussi.location.get('Westbahnhof, Innsbruck', (error, locations) => {
     // enjoy a fresh array of locations
@@ -106,7 +113,7 @@ A monitor object might look like this:
 Querying a monitor:
 
 ``` javascript
-const bussi = require('bussi')
+const bussi = require('@dnlggr/bussi')
 
 // assuming `wbhf` is a valid location object
 bussi.monitor.get(wbhf, (error, monitor) => {
