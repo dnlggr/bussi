@@ -1,6 +1,6 @@
 # Bussi 🚌
 
-*Bussi* is a node wrapper for parts of the API of a public transport service.
+*Bussi* is a node binding for parts of the API of a public transport service.
 
 ## What it can do
 
