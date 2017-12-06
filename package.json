@@ -1,7 +1,7 @@
 {
   "name": "@dnlggr/bussi",
   "version": "0.1.0",
-  "description": "A node wrapper for parts of the API of a public transport service",
+  "description": "A node binding for parts of the API of a public transport service.",
   "homepage": "https://github.com/dnlggr/bussi",
   "keywords": [ 
   	"public transport",
@@ -14,7 +14,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
   },
-  "author": "Daniel <hi@dnlggr.com> (https://dnlggr.com)",
+  "author": "Daniel E. <hi@dnlggr.com> (https://dnlggr.com)",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.17.1",
