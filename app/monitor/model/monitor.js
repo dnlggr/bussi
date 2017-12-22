@@ -7,6 +7,7 @@ function Monitor(location, journeys) {
 		departure.line = journey.line
 		departure.line.direction = journey.direction
 		departure.date = journey.date
+		departure.prognosed = journey.prognosed
 		return departure
 	})
 }

@@ -92,12 +92,12 @@ describe('Monitor', function() {
 				done()
 			})
 		})
-		it('should return date and date_prognosed for a line', function(done) {
+		it('should return date and prognosed for a line', function(done) {
 			app.location.get('Westbahnhof, Innsbruck', (error, locations) => {
 				expect(locations).to.have.length.above(0)
 				app.monitor.get(locations[0], (error, monitor) => {
 					expect(monitor.departures[0].date).to.exist
-					expect(monitor.departures[0].date_planned).to.exist
+					expect(monitor.departures[0].prognosed).to.exist
 					done()
 				})
 			})

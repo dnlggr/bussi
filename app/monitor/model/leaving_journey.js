@@ -9,8 +9,14 @@ function LeavingJourney(raw, line, location) {
 	this.direction = raw.dirTxt
 
 	const rawDate = raw.date
-	const rawTime = raw.stbStop.dTimeR ? raw.stbStop.dTimeR : raw.stbStop.dTimeS
-	this.date = moment(rawDate + " " + rawTime, 'YYYYMMDD HHmmss')
+	const rawDatePlanned =  raw.stbStop.dTimeS
+	const rawDatePrognosed = raw.stbStop.dTimeR
+	this.date = moment(rawDate + " " + rawDatePlanned, 'YYYYMMDD HHmmss')
+	if (rawDatePrognosed) {
+		this.prognosed = moment(rawDate + " " + rawDatePrognosed, 'YYYYMMDD HHmmss')
+	} else {
+		this.prgonosed = undefined
+	}
 }
 
 module.exports = LeavingJourney
